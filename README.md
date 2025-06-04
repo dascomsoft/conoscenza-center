@@ -1,12 +1,41 @@
-# React + Vite
+# 🌍 Chez La Conoscenza – Language Learning Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> This project is **currently under development** for a client. It aims to promote language learning in a modern and welcoming environment.
 
-Currently, two official plugins are available:
+## ✨ About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Chez La Conoscenza** believes that languages are **bridges** that connect cultures and open up **endless possibilities**.  
+Our mission is to make language learning **accessible**, **engaging**, and **transformative** for everyone.
 
-## Expanding the ESLint configuration
+Located in the heart of **Simbock, Yaoundé**, our language center provides a **modern** and **supportive** environment where each learner can develop their language skills at their own pace.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Tech Stack
+
+- ⚛️ **React** – for building a dynamic and responsive user interface  
+- ⚡ **Vite** – for fast development with hot module replacement  
+- 🎨 **Tailwind CSS** – for a clean, responsive, and modern design
+
+---
+
+## 🚧 Project Status
+
+🛠️ This project is currently **a work in progress**.  
+Features and pages will be added step by step during the development process.
+
+---
+
+## 📁 Project Structure (brief overview)
+
+```bash
+├── public/             # Static assets
+├── src/
+│   ├── assets/         # Images, icons, etc.
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Main application pages
+│   ├── App.jsx         # Main app component
+│   └── main.jsx        # Entry point
+├── tailwind.config.js  # Tailwind configuration
+├── vite.config.js      # Vite configuration
+└── package.json        # Project dependencies and scripts
