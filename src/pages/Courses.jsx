@@ -6,6 +6,8 @@
 import React from 'react';
 import { FaClock, FaUsers, FaBookOpen, FaGlobe, FaStar, FaChevronRight } from 'react-icons/fa';
 import { useEffect } from 'react';
+ import { Link } from 'react-router-dom';
+ import language from '../assets/language.webp'
 // import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 // import { Button } from '@/components/ui/button';
 // import Header from '../components/Header';
@@ -27,7 +29,7 @@ const Courses = () => {
       description: "La langue de la passion et de l'art",
       levels: ["Débutant", "Intermédiaire", "Avancé"],
       duration: "3-6 mois",
-      students: "150+",
+      students: "50",
       image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -36,7 +38,7 @@ const Courses = () => {
       description: "La langue internationale des affaires",
       levels: ["Débutant", "Intermédiaire", "Avancé", "Business"],
       duration: "2-8 mois",
-      students: "300+",
+      students: "30",
       image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -45,8 +47,8 @@ const Courses = () => {
       description: "La langue de la diplomatie et de la culture",
       levels: ["Débutant", "Intermédiaire", "Avancé"],
       duration: "3-6 mois",
-      students: "200+",
-      image: "https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      students: "15",
+      image: language
     },
     {
       name: "Allemand",
@@ -54,7 +56,7 @@ const Courses = () => {
       description: "La langue de l'innovation et de la technologie",
       levels: ["Débutant", "Intermédiaire", "Avancé"],
       duration: "4-8 mois",
-      students: "120+",
+      students: "30",
       image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -63,7 +65,7 @@ const Courses = () => {
       description: "La langue parlée par 500 millions de personnes",
       levels: ["Débutant", "Intermédiaire", "Avancé"],
       duration: "3-6 mois",
-      students: "180+",
+      students: "10",
       image: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -72,7 +74,7 @@ const Courses = () => {
       description: "La langue du futur économique mondial",
       levels: ["Débutant", "Intermédiaire", "Avancé"],
       duration: "6-12 mois",
-      students: "80+",
+      students: "15",
       image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
@@ -124,7 +126,7 @@ const Courses = () => {
           <div className="flex flex-wrap justify-center gap-4 text-lg">
             <span className="bg-white/20 px-4 py-2 rounded-full">7 Langues</span>
             <span className="bg-white/20 px-4 py-2 rounded-full">4 Formats</span>
-            <span className="bg-white/20 px-4 py-2 rounded-full">1000+ Étudiants</span>
+            <span className="bg-white/20 px-4 py-2 rounded-full">100+ Étudiants</span>
           </div>
         </div>
       </section>
@@ -184,6 +186,7 @@ const Courses = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {languages.map((language, index) => (
               <div key={index} className="shadow-xl overflow-hiddenhover:shadow-xl transition-shadow duration-300">
+               
                 <div className="h-48 overflow-hidden">
                   <img 
                     src={language.image} 
@@ -216,11 +219,25 @@ const Courses = () => {
                       </span>
                     </div>
                   </div>
-                  <button className="w-full p-1 rounded-lg mt-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700">
+                  {/* <button className="w-full p-1 rounded-lg mt-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700">
                     En savoir plus
-                  </button>
+                  </button> */}
+                  <div className='pt-3 pb-2'>
+                    <a href="https://wa.me/237652226323"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="w-full text-white p-2 rounded-lg bg-gradient-to-r from-orange-300 to-orange-600 hover:from-orange-600 hover:to-purple-700">
+                      En savoir plus
+                    </a>
+                  </div>
+
+            
+               
+                  
                 </div>
+               
               </div>
+
             ))}
           </div>
         </div>

@@ -72,7 +72,7 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold mb-2">Téléphone</h4>
                 <a href="tel:+237123456789" className="text-gray-300 hover:text-green-400 transition-colors">
-                  +237 123 456 789
+                  +237 652226323
                 </a>
               </div>
             </div>
@@ -83,8 +83,8 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Email</h4>
-                <a href="mailto:contact@laconoscenza.cm" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  contact@laconoscenza.cm
+                <a href="mailto:conoscenzacenter@gmail.com" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  conoscenzacenter@gmail.com
                 </a>
               </div>
             </div>
@@ -96,10 +96,10 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold mb-2">WhatsApp</h4>
                 <a
-                  href="https://wa.me/237123456789"
+                  href="https://wa.me/237652226323"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                  className="text-gray-300 cursor-pointer hover:text-green-400 transition-colors"
                 >
                   Contactez-nous sur WhatsApp
                 </a>

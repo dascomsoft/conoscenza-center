@@ -4,6 +4,9 @@
 import React from 'react';
 import { FaUsers, FaBullseye, FaAward, FaGlobe, FaHeart, FaBookOpen } from 'react-icons/fa';
 import { useEffect } from 'react';
+import student from '../assets/center5.jpg'
+import equipe from '../assets/center3.jpg'
+import { Link } from 'react-router-dom';
 // import Header from '../components/Header';
 // import Footer from '../components/Footer';
 
@@ -71,7 +74,7 @@ const About = () => {
               </div>
               <div className="lg:order-last">
                 <img 
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  src={student}
                   alt="Étudiants en classe"
                   className="rounded-lg shadow-xl w-full h-[400px] object-cover"
                 />
@@ -140,7 +143,7 @@ const About = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  src={equipe}
                   alt="Professeur en ligne"
                   className="rounded-lg shadow-xl w-full h-[400px] object-cover"
                 />
@@ -202,11 +205,11 @@ const About = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* <div className="text-center">
                 <div className="text-2xl font-bold text-orange-400 mb-2">13+</div>
                 <div className="text-lg">Années d'expérience</div>
-              </div>
+              </div> */}
               
               <div className="text-center">
                 <div className="text-2xl font-bold text-orange-400 mb-2">7</div>
@@ -214,7 +217,7 @@ const About = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-2xl font-bold text-orange-400 mb-2">500+</div>
+                <div className="text-2xl font-bold text-orange-400 mb-2">100+</div>
                 <div className="text-lg">Étudiants formés</div>
               </div>
               
@@ -245,18 +248,18 @@ const About = () => {
               Rejoignez notre communauté d'apprenants et découvrez le plaisir d'apprendre une nouvelle langue
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#contact" 
+              <Link 
+                to="/contact" 
                 className="bg-white text-orange-500 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Nous contacter
-              </a>
-              <a 
-                href="#cours" 
+              </Link>
+              <Link 
+                to="/courses" 
                 className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-500 transition-all duration-300 transform hover:scale-105"
               >
                 Voir nos cours
-              </a>
+              </Link>
             </div>
           </div>
         </section>
